@@ -1,29 +1,28 @@
-# electron-quick-start
+# electron-rpi-quick-start
 
-**Clone and run for a quick way to see an Electron in action.**
-
-This is a minimal Electron application based on the [Quick Start Guide](http://electron.atom.io/docs/latest/tutorial/quick-start) within the Electron documentation.
-
-A basic Electron application needs just these files:
-
-- `index.html` - A web page to render.
-- `main.js` - Starts the app and creates a browser window to render HTML.
-- `package.json` - Points to the app's main file and lists its details and dependencies.
-
-You can learn more about each of these components within the [Quick Start Guide](http://electron.atom.io/docs/latest/tutorial/quick-start).
+This fork of the [electron-quick-start](https://github.com/atom/electron-quick-start) app was made to jumpstart any electron app development on the rasperrypi (or any [resin.io supported device that has screen output](https://resin.io/#supported-devices)). Resin.io allows you to easily deploy and manage your application across a fleet of devices making it a great fit for distributed electron app. You can read more about how resin.io works [here](https://resin.io/how-it-works/)
 
 ## To Use
 
-To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+Follow this getting started guide to get your device connected to [resin.io](https://resin.io/)
 
-```bash
-# Clone this repository
-$ git clone https://github.com/atom/electron-quick-start
-# Go into the repository
-$ cd electron-quick-start
-# Install dependencies and run the app
-$ npm install && npm start
+Then clone this repository
 ```
+git clone https://github.com/resin.io-projects/electron-rpi-quick-start && cd electron-rpi-quick-start
+```
+
+Add your resin.io applications remote endpoint
+```
+git add remote resin <username>@git.resin.io:<username>/<app-name>.git
+```
+
+Push your application to your device and make sure it has a screen attached. 
+
+```
+git push resin master
+```
+
+You can learn more about each of these components within the [Quick Start Guide](http://electron.atom.io/docs/latest/tutorial/quick-start).
 
 Learn more about Electron and its API in the [documentation](http://electron.atom.io/docs/latest).
 
