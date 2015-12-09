@@ -16,7 +16,9 @@ Add your resin.io applications remote endpoint
 git add remote resin <username>@git.resin.io:<username>/<app-name>.git
 ```
 
-Push your application to your device and make sure it has a screen attached. 
+Make sure your device has a screen attached. If you are using the Raspberry Pi 7” Touchscreen Display, follow the instructions [here](http://docs.resin.io/#/pages/hardware/i2c-and-spi.md#raspberry-pi-7-touchscreen-display).
+
+Finally, push your application to your device.
 
 ```
 git push resin master
