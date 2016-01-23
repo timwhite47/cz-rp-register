@@ -1,7 +1,7 @@
 {
-  "name": "electron-quick-start",
-  "version": "1.0.0",
-  "description": "A minimal Electron application on Raspberry Pi",
+  "name": "coinzen-register",
+  "version": "0.0.1",
+  "description": "CoinZen Register",
   "main": "main.js",
   "scripts": {
     "start": "electron main.js"
